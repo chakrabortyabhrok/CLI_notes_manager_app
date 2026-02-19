@@ -58,9 +58,29 @@ def print_notes(notes):
     if not notes:
         print("-- No Notes Added --\n")
         return    
-    print(" ID |   TITLE   |       DESCRIPTION       |  PRIORITY  ")
+    print(" ID |    TITLE    |        DESCRIPTION        |  PRIORITY  ")
     print("-" * 55)
     for n in notes:
-        print(f"{n['id']:<4} | {n['notes_info']['title']:<11} | {n['notes_info']['description']:<25} | {n['notes_info']['priority']:<12}")
+        print(f"{n['id']:<3} | {n['notes_info']['title']:<11} | {n['notes_info']['description']:<25} | {n['notes_info']['priority']:<12}")
     print("-" * 55)
 
+def main():
+    notes = load_notes()
+    print("-- Welcome to the NOTES MANAGER ! --")
+    while True:
+        print(MENU)
+        choice = input("Enter a choice: \n").lower().strip()
+
+        if choice == "s":
+            print_notes(notes)
+
+        elif choice == "e":
+            print("-- Goodbye --")
+            break
+
+        else:
+            print("-- Enter a valid choice. --")
+
+
+if __name__ == "__main__":
+    main()
