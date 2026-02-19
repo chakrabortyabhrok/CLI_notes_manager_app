@@ -42,15 +42,25 @@ def delete_notes(notes, note_id):
             return True
     return False
 
+def get_notes_by_priority(notes, level):
+    return[n for n in notes if n["notes_info"]["priority"] == level]
 
-def show_ALL_priority(notes):
-    return [n["priority"] for n in notes]
+MENU = """
 
-def show_HIGH_priority(notes):
-    return [n for n in notes if n["priority"] == "High"]
+Add New Note           - a
+Delete Note            - d
+Show All Notes         - s
+Show Notes by priority - p
+Exit App               - e
 
-def show_MEDIUM_priority(notes):
-    return [n for n in notes if n["priority"] == "Medium"]
+"""
+def print_notes(notes):
+    if not notes:
+        print("-- No Notes Added --\n")
+        return    
+    print(" ID |   TITLE   |       DESCRIPTION       |  PRIORITY  ")
+    print("-" * 55)
+    for n in notes:
+        print(f"{n['id']:<4} | {n['notes_info']['title']:<11} | {n['notes_info']['description']:<25} | {n['notes_info']['priority']:<12}")
+    print("-" * 55)
 
-def show_LOW_priority(notes):
-    return [n for n in notes if n["priority"] == "Low"]
