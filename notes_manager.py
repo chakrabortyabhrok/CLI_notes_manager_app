@@ -78,7 +78,7 @@ def main():
 
             if priority not in ["High", "Medium", "Low"]:
                 priority = "Medium"
-            print(priority)
+            
             add_notes(notes, title, description, priority)
             save_notes(notes)
             print("-- Notes Added --")
@@ -97,7 +97,7 @@ def main():
                 print("-- Enter a valid ID --\n")
             
         elif choice == "s":
-            print("-- ALL NOTES --\n")
+            print("-- ALL NOTES --")
             print_notes(notes)
 
         elif choice == "p":
