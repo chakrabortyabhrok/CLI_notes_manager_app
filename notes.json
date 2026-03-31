@@ -1,242 +1,182 @@
 [
     {
         "id": 1,
-        "notes_info": {
-            "title": "Milk",
-            "description": "Buy 2L whole milk",
-            "priority": "High"
-        }
+        "title": "Milk",
+        "description": "Buy 2L whole milk",
+        "priority": "High"
     },
     {
         "id": 2,
-        "notes_info": {
-            "title": "Gym",
-            "description": "Leg day at 5pm",
-            "priority": "Low"
-        }
+        "title": "Gym",
+        "description": "Leg day at 5pm",
+        "priority": "Low"
     },
     {
         "id": 3,
-        "notes_info": {
-            "title": "Email",
-            "description": "Reply to manager",
-            "priority": "Medium"
-        }
+        "title": "Email",
+        "description": "Reply to manager",
+        "priority": "Medium"
     },
     {
         "id": 4,
-        "notes_info": {
-            "title": "Water",
-            "description": "Drink 2 liters",
-            "priority": "High"
-        }
+        "title": "Water",
+        "description": "Drink 2 liters",
+        "priority": "High"
     },
     {
         "id": 5,
-        "notes_info": {
-            "title": "Code",
-            "description": "Fix the login bug",
-            "priority": "High"
-        }
+        "title": "Code",
+        "description": "Fix the login bug",
+        "priority": "High"
     },
     {
         "id": 6,
-        "notes_info": {
-            "title": "Books",
-            "description": "Read 10 pages",
-            "priority": "Low"
-        }
+        "title": "Books",
+        "description": "Read 10 pages",
+        "priority": "Low"
     },
     {
         "id": 7,
-        "notes_info": {
-            "title": "Walk",
-            "description": "30 min in park",
-            "priority": "Medium"
-        }
+        "title": "Walk",
+        "description": "30 min in park",
+        "priority": "Medium"
     },
     {
         "id": 8,
-        "notes_info": {
-            "title": "Bills",
-            "description": "Pay electric bill",
-            "priority": "High"
-        }
+        "title": "Bills",
+        "description": "Pay electric bill",
+        "priority": "High"
     },
     {
         "id": 9,
-        "notes_info": {
-            "title": "Call",
-            "description": "Call Mom back",
-            "priority": "Medium"
-        }
+        "title": "Call",
+        "description": "Call Mom back",
+        "priority": "Medium"
     },
     {
         "id": 10,
-        "notes_info": {
-            "title": "Clean",
-            "description": "Vacuum the rug",
-            "priority": "Low"
-        }
+        "title": "Clean",
+        "description": "Vacuum the rug",
+        "priority": "Low"
     },
     {
         "id": 11,
-        "notes_info": {
-            "title": "Plants",
-            "description": "Water the ferns",
-            "priority": "Medium"
-        }
+        "title": "Plants",
+        "description": "Water the ferns",
+        "priority": "Medium"
     },
     {
         "id": 12,
-        "notes_info": {
-            "title": "Refuel",
-            "description": "Gas up the car",
-            "priority": "High"
-        }
+        "title": "Refuel",
+        "description": "Gas up the car",
+        "priority": "High"
     },
     {
         "id": 13,
-        "notes_info": {
-            "title": "Study",
-            "description": "FastAPI schemas",
-            "priority": "High"
-        }
+        "title": "Study",
+        "description": "FastAPI schemas",
+        "priority": "High"
     },
     {
         "id": 14,
-        "notes_info": {
-            "title": "Bread",
-            "description": "Get sourdough",
-            "priority": "Low"
-        }
+        "title": "Bread",
+        "description": "Get sourdough",
+        "priority": "Low"
     },
     {
         "id": 15,
-        "notes_info": {
-            "title": "Meeting",
-            "description": "Sync at 10 AM",
-            "priority": "High"
-        }
+        "title": "Meeting",
+        "description": "Sync at 10 AM",
+        "priority": "High"
     },
     {
         "id": 16,
-        "notes_info": {
-            "title": "Backup",
-            "description": "Cloud sync files",
-            "priority": "Medium"
-        }
+        "title": "Backup",
+        "description": "Cloud sync files",
+        "priority": "Medium"
     },
     {
         "id": 17,
-        "notes_info": {
-            "title": "Trash",
-            "description": "Take out bins",
-            "priority": "Low"
-        }
+        "title": "Trash",
+        "description": "Take out bins",
+        "priority": "Low"
     },
     {
         "id": 18,
-        "notes_info": {
-            "title": "Plan",
-            "description": "Next week tasks",
-            "priority": "Medium"
-        }
+        "title": "Plan",
+        "description": "Next week tasks",
+        "priority": "Medium"
     },
     {
         "id": 19,
-        "notes_info": {
-            "title": "Update",
-            "description": "OS system patch",
-            "priority": "High"
-        }
+        "title": "Update",
+        "description": "OS system patch",
+        "priority": "High"
     },
     {
         "id": 20,
-        "notes_info": {
-            "title": "Dinner",
-            "description": "Make pasta tonight",
-            "priority": "Low"
-        }
+        "title": "Dinner",
+        "description": "Make pasta tonight",
+        "priority": "Low"
     },
     {
         "id": 21,
-        "notes_info": {
-            "title": "Fruits",
-            "description": "Apples and Pears",
-            "priority": "Medium"
-        }
+        "title": "Fruits",
+        "description": "Apples and Pears",
+        "priority": "Medium"
     },
     {
         "id": 22,
-        "notes_info": {
-            "title": "Sleep",
-            "description": "Bed by 11 PM",
-            "priority": "High"
-        }
+        "title": "Sleep",
+        "description": "Bed by 11 PM",
+        "priority": "High"
     },
     {
         "id": 23,
-        "notes_info": {
-            "title": "Yoga",
-            "description": "Stretch session",
-            "priority": "Low"
-        }
+        "title": "Yoga",
+        "description": "Stretch session",
+        "priority": "Low"
     },
     {
         "id": 24,
-        "notes_info": {
-            "title": "Review",
-            "description": "Check PR #102",
-            "priority": "High"
-        }
+        "title": "Review",
+        "description": "Check PR #102",
+        "priority": "High"
     },
     {
         "id": 25,
-        "notes_info": {
-            "title": "Gifts",
-            "description": "Buy birthday card",
-            "priority": "Medium"
-        }
+        "title": "Gifts",
+        "description": "Buy birthday card",
+        "priority": "Medium"
     },
     {
         "id": 26,
-        "notes_info": {
-            "title": "Docs",
-            "description": "Read API specs",
-            "priority": "Medium"
-        }
+        "title": "Docs",
+        "description": "Read API specs",
+        "priority": "Medium"
     },
     {
         "id": 27,
-        "notes_info": {
-            "title": "Bank",
-            "description": "Check balance",
-            "priority": "High"
-        }
+        "title": "Bank",
+        "description": "Check balance",
+        "priority": "High"
     },
     {
         "id": 28,
-        "notes_info": {
-            "title": "Med",
-            "description": "Take vitamins",
-            "priority": "High"
-        }
+        "title": "Med",
+        "description": "Take vitamins",
+        "priority": "High"
     },
     {
         "id": 29,
-        "notes_info": {
-            "title": "Laundry",
-            "description": "Wash dark colors",
-            "priority": "Low"
-        }
+        "title": "Laundry",
+        "description": "Wash dark colors",
+        "priority": "Low"
     },
     {
         "id": 30,
-        "notes_info": {
-            "title": "Fix",
-            "description": "Repair chair leg",
-            "priority": "Medium"
-        }
+        "title": "Fix",
+        "description": "Repair chair leg",
+        "priority": "Medium"
     }
 ]

@@ -7,12 +7,14 @@ class Notes:
         self.priority = priority
 
     def to_dict(self):
-        return{
-            "id":self.id,
-            "notes_info": {
-                "title": self.title,
-                "description": self.description,
-                "priority": self.priority
+        return[
+            {
+                "id": 1,
+                "notes_info": {
+                    "title": "Milk",
+                    "description": "Buy 2L whole milk",
+                    "priority": "High"
+                    }
             }
-        }
+        ]
     

@@ -25,16 +25,16 @@ def main():
             if priority not in ["High", "Medium", "Low"]:
                 priority = "Medium"
             
-            manager.add_notes(notes, title, description, priority)
-            manager.save_notes(notes)
+            manager.add_notes(title, description, priority)
+            manager.save_notes()
             print("-- Notes Added --")
 
         elif choice == "d":
             print("-- DELETE NOTE --\n")
             try:
                 note_id = int(input("Enter the note ID: \n"))
-                if manager.delete_notes(notes, note_id):
-                    manager.save_notes(notes)
+                if manager.delete_notes(note_id):
+                    manager.save_notes()
                     print("-- Note Deleted --")
                 else:
                     print("-- ID not found --")
@@ -44,7 +44,7 @@ def main():
             
         elif choice == "s":
             print("-- ALL NOTES --")
-            manager.print_notes(notes)
+            manager.print_notes()
 
         elif choice == "p":
             print("-- SEARCH NOTES BY PRIORITY --")
@@ -52,7 +52,7 @@ def main():
 
             if level not in ["High", "Medium", "Low"]:
                 print("-- no notes with aked priority --")
-            manager.print_notes(manager.get_notes_by_priority(notes, level))
+            manager.print_notes(manager.get_notes_by_priority(level))
 
         elif choice == "e":
             print("-- Goodbye --")
