@@ -54,7 +54,7 @@ def main():
 
             if level not in ["High", "Medium", "Low"]:
                 print(f"-- No notes found with priority: {level}")
-                return
+                
             else:
                 manager.get_notes_by_priority(level)
 

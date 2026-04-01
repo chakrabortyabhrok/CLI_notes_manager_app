@@ -178,11 +178,5 @@
         "title": "Fix",
         "description": "Repair chair leg",
         "priority": "Medium"
-    },
-    {
-        "id": 31,
-        "title": "Test",
-        "description": "Test",
-        "priority": "Medium"
     }
 ]
