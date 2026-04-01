@@ -64,16 +64,26 @@ class NotesManager:
         return False
 
     def get_notes_by_priority(self, level):
-        return[n for n in self._notes if n["notes_info"]["priority"] == level]
+        if not self._notes:
+            print("-- No Notes Added Yet --\n")
+            return  
+        print(" ID |    TITLE    |        DESCRIPTION        |  PRIORITY  ")
+        print("-" * 55)
+        for n in self._notes:
+            if n.priority == level:
+                print(n.display_notes())
+        print("-" * 55)
+            
 
-
+                
+            
     def print_notes(self):
         if not self._notes:
-            print("-- No Notes Added --\n")
+            print("-- No Notes Added Yet --\n")
             return    
         print(" ID |    TITLE    |        DESCRIPTION        |  PRIORITY  ")
         print("-" * 55)
         for n in self._notes:
-            print(f"{n['id']:<3} | {n['notes_info']['title']:<11} | {n['notes_info']['description']:<25} | {n['notes_info']['priority']:<12}")
+            print(n.display_notes())
         print("-" * 55)
 

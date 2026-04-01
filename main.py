@@ -48,11 +48,13 @@ def main():
 
         elif choice == "p":
             print("-- SEARCH NOTES BY PRIORITY --")
-            level = input("Enter the priority level: --[High / Medium / Low]\n").lower().strip().capitalize()
+            level = input("Enter the priority level: --[High / Medium / Low]\n").strip().capitalize()
 
             if level not in ["High", "Medium", "Low"]:
-                print("-- no notes with aked priority --")
-            manager.print_notes(manager.get_notes_by_priority(level))
+                print(f"-- No notes found with priority: {level}")
+                return
+            else:
+                manager.get_notes_by_priority(level)
 
         elif choice == "e":
             print("-- Goodbye --")

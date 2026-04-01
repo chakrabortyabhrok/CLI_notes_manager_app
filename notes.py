@@ -18,3 +18,5 @@ class Notes:
             }
         ]
     
+    def display_notes(self):
+        return (f"{self.id:<3} | {self.title:<11} | {self.description:<25} | {self.priority:<12}")
