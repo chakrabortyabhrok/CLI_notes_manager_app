@@ -1,4 +1,5 @@
 from manager import NotesManager
+from notes import Notes
 
 MENU = """
 Add New Note           - a
@@ -18,16 +19,17 @@ def main():
 
         if choice == "a":
             print("-- ADD NOTE --\n")
-            title = input("-- TITLE: (11 characters) --\n").lower().strip()
-            description = input("-- DECRIPTION: (25 characters) --\n").lower().strip()
-            priority = input("-- PRIORITY: --[High / Medium / Low]\n").lower().strip().capitalize()
+            title = input("-- TITLE: (11 characters) --\n").strip().capitalize()
+            description = input("-- DECRIPTION: (25 characters) --\n").strip().capitalize()
+            priority = input("-- PRIORITY: --[High / Medium / Low]\n").strip().capitalize()
 
             if priority not in ["High", "Medium", "Low"]:
                 priority = "Medium"
-            
-            manager.add_notes(title, description, priority)
-            manager.save_notes()
-            print("-- Notes Added --")
+
+            new_id = manager.get_new_id()
+
+            new_obj = Notes(new_id, title, description, priority)
+            manager.add_notes(new_obj)
 
         elif choice == "d":
             print("-- DELETE NOTE --\n")

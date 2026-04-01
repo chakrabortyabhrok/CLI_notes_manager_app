@@ -43,22 +43,16 @@ class NotesManager:
             if not n:
                 return 1
         else:
-            return max(n["id"]for n in self._notes ) + 1
+            return max(n.id for n in self._notes ) + 1
     
-    def add_notes(self, notes_title, notes_description, notes_priority):
-        new_note = {
-            "id": self.get_new_id(),
-            "notes_info": {
-            "title": notes_title,
-            "description": notes_description,
-            "priority": notes_priority
-            }
-        }
-        self._notes.append(new_note)
+    def add_notes(self, new_obj):
+        self._notes.append(new_obj)
+        self.save_notes()
+        print("-- Note Added --")
 
     def delete_notes(self, note_id):
         for n in self._notes:
-            if n["id"] == note_id:
+            if n.id == note_id:
                 self._notes.remove(n)
                 return True
         return False
@@ -73,10 +67,7 @@ class NotesManager:
             if n.priority == level:
                 print(n.display_notes())
         print("-" * 55)
-            
-
-                
-            
+        
     def print_notes(self):
         if not self._notes:
             print("-- No Notes Added Yet --\n")
